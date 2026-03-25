@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>       TechStore</h1>
+        <nav>
+            <a href="inicio.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="carrinho.html">Carrinho</a>
+        </nav>
+    </header>
+    <form id="search-form">
+        <input type="text" id="search-input" placeholder="O que você procura?">
+        <btn type="submit">Pesquisar</btn>
+    </form>
+
+    <main>
+        <h2>Produtos em destaque</h2>
+        <div class="produtos">
+            <div class="produto">
+                <h3>Placa de vídeo RTX 4060</h3>
+                <img id="img-produto" src="foto8.jpeg" alt="Placa de vídeo RTX 4060" width="200" class="loading">
+                <p>R$ 2.500</p>
+                <button onclick="addCarrinho('RTX 4060')">Comprar</button>
+            </div>
+
+            <div class="produto">
+                <h3>Processador intel i5-12400</h3>
+                <img id="img-produto" src="foto11.jpg" alt="Processador Intel i5" width="200" class="loading">
+                <p>R$ 1200</p>
+                <button onclick="addCarrinho('intel i5-12400')">Comprar</button>
+            </div>
+
+            <div class="produto">
+                <h3>PlayStation 5</h3>
+                <img id="img-produto" src="foto12.jpg" alt="PlayStation 5" width="200" class="loading">
+                <p>R$ 3800</p>
+                <button onclick="addCarrinho('PlayStation 5')">Comprar</button>
+        </div>
+        <div class="produto">
+            <h3>Water Cooler 240MM Fortrek Breezy, RGB, White</h3>
+            <img id="img-produto" src="foto1.jpg" alt="Water Cooler 240mm" width="200" class="loading">
+            <p>R$ 450</p>
+            <button onclick="addCarrinho('Water Cooler 240MM Fortrek Breezy, RGB, White')">Comprar</button>
+        </div>
+        <div class="produto">
+            <h3>Placa Mãe b550m</h3>
+            <img id="img-produto" src="foto2.jpg" alt="Placa Mãe b550m" width="200" class="loading">
+            <p>R$950</p>
+            <button onclick="addCarrinho('Placa Mãe b550m')">Comprar</button>
+        </div>
+        <div class="produto">
+            <h3>Memória RAM 16GB DDR4 3200MHz</h3>
+            <img id="img-produto" src="" alt="Memória RAM 16GB" width="200" class="loading">
+            <p>R$ 320</p>
+            <button onclick="addCarrinho('Memória RAM 16GB')">Comprar</button>
+        </div>
+    
+        <div class="produto">
+            <h3>SSD M.2 NVMe 1TB Kingston</h3>
+            <img id="img-produto" src="" alt="SSD M.2 1TB" width="200" class="loading">
+            <p>R$ 480</p>
+            <button onclick="addCarrinho('SSD M.2 NVMe 1TB')">Comprar</button>
+        </div>
+    
+        <div class="produto">
+            <h3>Monitor Gamer 24" 144Hz Curvo</h3>
+            <img id="img-produto" src="" alt="Monitor Gamer" width="200" class="loading">
+            <p>R$ 1.100</p>
+            <button onclick="addCarrinho('Monitor Gamer 24 144Hz')">Comprar</button>
+        </div>
+    
+        <div class="produto">
+            <h3>Mouse Gamer Logi G502 Hero</h3>
+            <img id="img-produto" src="" alt="Mouse Gamer G502" width="200" class="loading">
+            <p>R$ 290</p>
+            <button onclick="addCarrinho('Mouse Gamer Logi G502')">Comprar</button>
+        </div>
+    
+        <div class="produto">
+            <h3>Teclado Mecânico RGB Switch Blue</h3>
+            <img id="img-produto" src="" alt="Teclado Mecânico" width="200" class="loading">
+            <p>R$ 350</p>
+            <button onclick="addCarrinho('Teclado Mecânico RGB')">Comprar</button>
+        </div>
+        <div class="produto">
+            <h3>Headset Gamer HyperX Cloud II</h3>
+            <img id="img-produto" src="" alt="Headset HyperX" width="200" class="loading">
+            <p>R$ 540</p>
+            <button onclick="addCarrinho('Headset HyperX Cloud II')">Comprar</button>
+        </div>
+        
+        <div class="produto">
+            <h3>Microfone Condensador QuadCast S</h3>
+            <img id="img-produto" src="" alt="Microfone QuadCast" width="200" class="loading">
+            <p>R$ 980</p>
+            <button onclick="addCarrinho('Microfone QuadCast S')">Comprar</button>
+        </div>
+        
+        <div class="produto">
+            <h3>Cadeira Gamer Ergonômica Black</h3>
+            <img id="img-produto" src="" alt="Cadeira Gamer" width="200" class="loading">
+            <p>R$ 1.250</p>
+            <button onclick="addCarrinho('Cadeira Gamer Black')">Comprar</button>
+        </div>
+        
+        <div class="produto">
+            <h3>Fonte Corsair 750W 80 Plus Gold</h3>
+            <img id="img-produto" src="" alt="Fonte Corsair 750W" width="200" class="loading">
+            <p>R$ 680</p>
+            <button onclick="addCarrinho('Fonte Corsair 750W')">Comprar</button>
+        </div>
+        
+        <div class="produto">
+            <h3>Gabinete Mid Tower Vidro Temperado</h3>
+            <img id="img-produto" src="" alt="Gabinete Gamer" width="200" class="loading">
+            <p>R$ 420</p>
+            <button onclick="addCarrinho('Gabinete Mid Tower')">Comprar</button>
+        </div>
+        
+        <div class="produto">
+            <h3>Placa de Vídeo RTX 4070 Ti</h3>
+            <img id="img-produto" src="" alt="RTX 4070 Ti" width="200" class="loading">
+            <p>R$ 5.400</p>
+            <button onclick="addCarrinho('RTX 4070 Ti')">Comprar</button>
+        </div>
+        
+        <div class="produto">
+            <h3>Nintendo Switch OLED - Branco</h3>
+            <img id="img-produto" src="" alt="Nintendo Switch" width="200" class="loading">
+            <p>R$ 2.100</p>
+            <button onclick="addCarrinho('Nintendo Switch OLED')">Comprar</button>
+        </div>
+        
+        <div class="produto">
+            <h3>Controle DualSense PS5 - Midnight Black</h3>
+            <img id="img-produto" src="" alt="Controle PS5" width="200" class="loading">
+            <p>R$ 430</p>
+            <button onclick="addCarrinho('Controle DualSense PS5')">Comprar</button>
+        </div>
+        
+        <div class="produto">
+            <h3>Apple MacBook Air M2 13"</h3>
+            <img id="img-produto" src="" alt="MacBook Air M2" width="200" class="loading">
+            <p>R$ 7.900</p>
+            <button onclick="addCarrinho('MacBook Air M2')">Comprar</button>
+        </div>
+        
+        <div class="produto">
+            <h3>Roteador TP-Link Wi-Fi 6 Archer</h3>
+            <img id="img-produto" src="" alt="Roteador Wi-Fi 6" width="200" class="loading">
+            <p>R$ 550</p>
+            <button onclick="addCarrinho('Roteador TP-Link AX')">Comprar</button>
+        </div>
+        
+        <div class="produto">
+            <h3>Webcam Logitech C920e Full HD</h3>
+            <img id="img-produto" src="" alt="Webcam Logitech" width="200" class="loading">
+            <p>R$ 380</p>
+            <button onclick="addCarrinho('Webcam55 Logitech C920e')">Comprar</button>
+        </div>
+        
+        <div class="produto">
+            <h3>Caixa de Som Edifier R1280T</h3>
+            <img id="img-produto" src="" alt="Caixas de Som Edifier" width="200" class="loading">
+            <p>R$ 790</p>
+            <button onclick="addCarrinho('Edifier R1280T')">Comprar</button>
+        </div>
+
+    </main>
+
+    <div id="toast-carrinho" class="toast">
+        ✅ <span id="nome-produto-toast"></span> adicionado ao carrinho!
+    </div>
+
+    <script src="style.js"></script> 
+</body>
+</html>

@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: black;
+    color: white;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background-color: #06032d;
+    padding: 15px;
+    display: flex;
+    /* Alinha o título de um lado e o menu do outro */
+    justify-content: space-between; 
+    align-items: center;
+}
+
+nav a {
+    text-align: center;
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+}
+form {
+    text-align: right;
+    min-width: 100px;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.produto {
+    background: #1a1a1a; 
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+}
+btn{
+    padding: 10px 20px;
+     background-color: #195c28;
+     color: white;
+     border: none;
+     cursor: pointer;
+     text-align: center;
+ 
+ }
+button {
+    background-color: #27762a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+img {
+        mix-blend-mode: screen;
+}
+button:hover {
+    text-align: right;
+    text-align: right;
+    background-color: #0b5e0f;
+}
+main {
+    text-align: center;
+}
+#search-form {
+    display: flex;
+    max-width: 400px;
+    margin: 20px 0 20px auto;
+}
+  
+  #search-input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #ddd;
+    outline: none;
+}
+  
+  #search-input:focus {
+    border-color: #007bff;
+}
+  
+  button {
+    padding: 10px 20px;
+    background-color: #195c28;
+    color: white;
+    border: none;
+    border-radius:10px;
+    cursor: pointer;
+    text-align: center;
+}
+.toast {
+    visibility: hidden;
+    min-width: 280px;
+    background-color: #53115b; /* Laranja KaBuM */
+    color: #2bff00;
+    text-align: center;
+    border-radius: 8px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1000;
+    right: 20px;
+    top: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+    opacity: 0;
+    transition: opacity 0.3s, top 0.3s;
+}
+
+/* Quando o JS ativa o aviso */
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+    top: 30px;
+}
+
+#nome-produto-toast {
+    color: #000; /* Destaca o nome do produto em preto ou branco */
+    background: rgba(255,255,255,0.2);
+    padding: 2px 5px;
+    border-radius: 4px;
+}
